@@ -1,0 +1,4 @@
+.footer { background:#f3f4f6; padding:20px; }
+.footer-top { display:flex; gap:20px; }
+.footer-section h3,h4 { margin:0 0 6px 0 }
+.footer-bottom { margin-top:10px; text-align:center; }

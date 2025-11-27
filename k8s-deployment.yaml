@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: groceries-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: groceries-frontend
+  template:
+    metadata:
+      labels:
+        app: groceries-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: groceries-frontend:latest
+          ports:
+            - containerPort: 5173
+          env:
+            - name: NODE_ENV
+              value: production
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: groceries-frontend
+spec:
+  selector:
+    app: groceries-frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5173
+  type: ClusterIP

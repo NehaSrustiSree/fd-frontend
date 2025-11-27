@@ -1,0 +1,4 @@
+.cart-container { max-width:800px; margin:0 auto; }
+.cart-list { list-style:none; padding:0 }
+.cart-item { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid #eee }
+.qty-btn { padding:6px 10px }
