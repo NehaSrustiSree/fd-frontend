@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 // Pages
 import Home from "./pages/Home";
 import Orders from "./pages/Orders";
-import Payments from "./pages/Payments";
+import Payments from "./pages/payments";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";

@@ -1,0 +1,11 @@
+.orders-container {
+  padding: 1rem;
+}
+
+.orders-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.orders-container p {
+  color: #666;
+}
